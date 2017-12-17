@@ -1,0 +1,108 @@
+<html ng-app="myModule">
+<head>
+
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+
+	<div ng-controller="myController">
+		<table>
+		<tr>
+		<td>Input 1: </td>
+		<td><input type="text" ng-model="input1" /> </td>
+		</tr>
+		
+		<tr>
+		<td>Input2: </td>
+		<td><input type="text" ng-model="input2" /> </td>
+		</tr>
+		
+		<tr>
+		<td>Result: </td>
+		<td><input type="text" ng-model="output" /></td>
+		</tr>
+		
+		<tr>
+		<td>
+		<input type="button" ng-click="add(input1,input2)"
+		value="ADD" />
+		
+		<input type="button" ng-click="sub(input1,input2)"
+		value="SUB" />
+		</td>
+		<td>
+		<input type="button" ng-click="mul(input1,input2)"
+		value="MUL" />
+		
+		<input type="button" ng-click="div(input1,input2)"
+		value="DIV" />
+		</td>
+		
+		</tr>
+		</table>		
+		
+	</div>
+
+<script>
+	
+		var app = angular.module("myModule", []);
+		app.controller("myController", function ($scope, $http) {
+			
+			$scope.add = function (input1,input2){
+			var output = 0;
+			/* use parseInt to convert char to int values */
+			/* use input type=number for integer values calculation */
+			output = parseInt(input1)+parseInt(input2);
+			$scope.output = output;
+			};
+			$scope.sub = function (input1,input2){
+			var output = 0;
+			/* use parseInt to convert char to int values */
+			/* use input type=number for integer values calculation */
+			output = parseInt(input1)-parseInt(input2);
+			$scope.output = output;
+			};
+			$scope.mul = function (input1,input2){
+			var output = 0;
+			/* use parseInt to convert char to int values */
+			/* use input type=number for integer values calculation */
+			output = parseInt(input1)*parseInt(input2);
+			$scope.output = output;
+			};
+			$scope.div = function (input1,input2){
+			var output = 0;
+			/* use parseInt to convert char to int values */
+			/* use input type=number for integer values calculation */
+			output = parseInt(input1)/parseInt(input2);
+			$scope.output = output;
+			};
+			
+			
+			/*$scope.transformString = function (input) {
+			if (!input)
+			return input;
+			var output = "";
+			for (var i = 0; i < input.length; i++) {
+			if (i > 0 && input[i] == input[i].toUpperCase()) {
+			output = output + " ";
+			}
+			output = output + input[i];
+			}
+			$scope.output = output;
+			};*/
+		 
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>
