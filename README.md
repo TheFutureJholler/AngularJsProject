@@ -7,5 +7,5 @@ View icon allows user to view record in modal as a detail view.  Delete icon all
 
 3)js_event_like_dislike.html -> on clicking on like and deslike the counter gets incremented for each Technologies.
 
-4) json_example.html -> this html file allows you to read a .txt file(json.txt) which contains json in human readable format.
+4)json_example.html -> this html file allows you to read a .txt file(json.txt) which contains json in human readable format.
 
