@@ -3,6 +3,8 @@
 The form on left side allows user to add new record in Database. Edit icon allows user to edit existing record. 
 View icon allows user to view record in modal as a detail view.  Delete icon allows user to delete the record from database.
 
+link -> https://thefuturejholler.github.io/AngularJsProject/Angular-js-proj1.mp4
+
 2)calculator_ex.html -> a small prototype of calculator developed using angularjs events.
 
 3)js_event_like_dislike.html -> on clicking on like and deslike the counter gets incremented for each Technologies.
